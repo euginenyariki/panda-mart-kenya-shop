@@ -13,43 +13,57 @@ const Electronics = () => {
       id: 1,
       name: 'Samsung Galaxy Smartphone',
       price: 25000,
-      image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300',
+      image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop',
       description: 'Latest smartphone with advanced camera and long battery life'
     },
     {
       id: 2,
       name: 'Wireless Bluetooth Headphones',
       price: 3500,
-      image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300',
+      image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop',
       description: 'High-quality wireless headphones with noise cancellation'
     },
     {
       id: 3,
       name: 'Smart Watch',
       price: 8000,
-      image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300',
+      image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop',
       description: 'Fitness tracking smartwatch with heart rate monitor'
     },
     {
       id: 4,
       name: 'Laptop Computer',
       price: 45000,
-      image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300',
+      image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop',
       description: 'High-performance laptop for work and entertainment'
     },
     {
       id: 5,
-      name: 'Power Bank',
+      name: 'Power Bank 20000mAh',
       price: 1500,
-      image: 'https://images.unsplash.com/photo-1609592043297-7aac240d4144?w=300',
+      image: 'https://images.unsplash.com/photo-1609592043297-7aac240d4144?w=400&h=300&fit=crop',
       description: 'Portable charger with fast charging capability'
     },
     {
       id: 6,
       name: 'USB Cable Set',
       price: 800,
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300',
+      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop',
       description: 'Universal charging cables for all devices'
+    },
+    {
+      id: 7,
+      name: 'Wireless Speaker',
+      price: 4200,
+      image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop',
+      description: 'Portable Bluetooth speaker with premium sound quality'
+    },
+    {
+      id: 8,
+      name: 'Tablet 10 inch',
+      price: 18000,
+      image: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=300&fit=crop',
+      description: 'Android tablet perfect for work and entertainment'
     }
   ];
 
@@ -70,7 +84,7 @@ const Electronics = () => {
             <div className="text-3xl animate-panda-bounce mt-4">🐼📱</div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {products.map((product, index) => (
               <Card 
                 key={product.id} 

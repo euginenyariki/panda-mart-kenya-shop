@@ -13,43 +13,57 @@ const Clothing = () => {
       id: 1,
       name: 'Men\'s Cotton T-Shirt',
       price: 1200,
-      image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300',
+      image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop',
       description: 'Comfortable cotton t-shirt in various colors'
     },
     {
       id: 2,
-      name: 'Women\'s Dress',
+      name: 'Women\'s Elegant Dress',
       price: 2500,
-      image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=300',
+      image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=300&fit=crop',
       description: 'Elegant dress perfect for any occasion'
     },
     {
       id: 3,
-      name: 'Men\'s Jeans',
+      name: 'Men\'s Denim Jeans',
       price: 3000,
-      image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?w=300',
+      image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=300&fit=crop',
       description: 'Durable denim jeans with modern fit'
     },
     {
       id: 4,
-      name: 'Women\'s Blouse',
+      name: 'Women\'s Professional Blouse',
       price: 1800,
-      image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300',
+      image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop',
       description: 'Professional blouse for office wear'
     },
     {
       id: 5,
-      name: 'Kids\' School Uniform',
+      name: 'Kids\' School Uniform Set',
       price: 2200,
-      image: 'https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=300',
+      image: 'https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=400&h=300&fit=crop',
       description: 'Complete school uniform set for children'
     },
     {
       id: 6,
-      name: 'Sports Jacket',
+      name: 'Waterproof Sports Jacket',
       price: 4000,
-      image: 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=300',
+      image: 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=300&fit=crop',
       description: 'Water-resistant sports jacket for outdoor activities'
+    },
+    {
+      id: 7,
+      name: 'Women\'s Casual Sneakers',
+      price: 2800,
+      image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=300&fit=crop',
+      description: 'Comfortable sneakers for everyday wear'
+    },
+    {
+      id: 8,
+      name: 'Men\'s Formal Shirt',
+      price: 2000,
+      image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=300&fit=crop',
+      description: 'Classic formal shirt for business occasions'
     }
   ];
 
@@ -70,7 +84,7 @@ const Clothing = () => {
             <div className="text-3xl animate-panda-bounce mt-4">🐼👕</div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {products.map((product, index) => (
               <Card 
                 key={product.id} 

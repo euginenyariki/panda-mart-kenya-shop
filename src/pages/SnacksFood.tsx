@@ -13,43 +13,57 @@ const SnacksFood = () => {
       id: 1,
       name: 'Potato Chips Variety Pack',
       price: 350,
-      image: 'https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=300',
+      image: 'https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&h=300&fit=crop',
       description: 'Crispy potato chips in multiple flavors'
     },
     {
       id: 2,
-      name: 'Chocolate Cookies',
+      name: 'Chocolate Chip Cookies',
       price: 250,
-      image: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=300',
+      image: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=300&fit=crop',
       description: 'Sweet chocolate chip cookies perfect for snacking'
     },
     {
       id: 3,
-      name: 'Mixed Nuts',
+      name: 'Premium Mixed Nuts',
       price: 800,
-      image: 'https://images.unsplash.com/photo-1576251138431-9e62bc94ae45?w=300',
+      image: 'https://images.unsplash.com/photo-1576251138431-9e62bc94ae45?w=400&h=300&fit=crop',
       description: 'Premium roasted mixed nuts for healthy snacking'
     },
     {
       id: 4,
-      name: 'Energy Drinks Pack',
+      name: 'Energy Drinks 6-Pack',
       price: 600,
-      image: 'https://images.unsplash.com/photo-1544545900-7e1c9c25e58e?w=300',
+      image: 'https://images.unsplash.com/photo-1544545900-7e1c9c25e58e?w=400&h=300&fit=crop',
       description: 'Refreshing energy drinks to boost your day'
     },
     {
       id: 5,
-      name: 'Instant Noodles',
+      name: 'Instant Noodles Pack',
       price: 120,
-      image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300',
+      image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop',
       description: 'Quick and delicious instant noodles'
     },
     {
       id: 6,
-      name: 'Fruit Juice Box',
+      name: 'Fresh Fruit Juice Box',
       price: 180,
-      image: 'https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=300',
+      image: 'https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=400&h=300&fit=crop',
       description: 'Fresh fruit juice in convenient packaging'
+    },
+    {
+      id: 7,
+      name: 'Breakfast Cereal Box',
+      price: 450,
+      image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop',
+      description: 'Nutritious breakfast cereal with vitamins'
+    },
+    {
+      id: 8,
+      name: 'Assorted Candy Pack',
+      price: 300,
+      image: 'https://images.unsplash.com/photo-1571506165871-ee72a35bfcf3?w=400&h=300&fit=crop',
+      description: 'Colorful assorted candies for sweet treats'
     }
   ];
 
@@ -70,7 +84,7 @@ const SnacksFood = () => {
             <div className="text-3xl animate-panda-bounce mt-4">🐼🍿</div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {products.map((product, index) => (
               <Card 
                 key={product.id} 
