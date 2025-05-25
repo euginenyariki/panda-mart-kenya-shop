@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Home, YouTube } from 'lucide-react';
+import { Home, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -28,7 +27,7 @@ const Footer = () => {
                 <Home size={24} />
               </a>
               <a href="#" className="text-gray-300 hover:text-panda-red transition-colors">
-                <YouTube size={24} />
+                <Youtube size={24} />
               </a>
             </div>
           </div>
