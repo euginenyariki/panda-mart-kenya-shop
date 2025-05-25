@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Panda Mart theme colors
+				panda: {
+					red: '#DC2626',
+					black: '#1F2937',
+					white: '#FFFFFF',
+					gray: '#F3F4F6'
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,55 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'panda-bounce': {
+					'0%, 20%, 50%, 80%, 100%': {
+						transform: 'translateY(0)',
+					},
+					'40%': {
+						transform: 'translateY(-10px)',
+					},
+					'60%': {
+						transform: 'translateY(-5px)',
+					},
+				},
+				'panda-wave': {
+					'0%, 100%': {
+						transform: 'rotate(0deg)',
+					},
+					'25%': {
+						transform: 'rotate(10deg)',
+					},
+					'75%': {
+						transform: 'rotate(-10deg)',
+					},
+				},
+				'slide-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)',
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)',
+					},
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+					},
+					'100%': {
+						opacity: '1',
+					},
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'panda-bounce': 'panda-bounce 2s ease-in-out infinite',
+				'panda-wave': 'panda-wave 1s ease-in-out infinite',
+				'slide-in': 'slide-in 0.6s ease-out',
+				'fade-in': 'fade-in 0.8s ease-out'
 			}
 		}
 	},
